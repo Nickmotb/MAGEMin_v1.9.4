@@ -92,10 +92,10 @@ stx21_dataset stx21_db = {
 stx24_dataset stx24_db = {
 	2024,						/* Endmember default dataset number */
 	8,							/* number of oxides */			
-	17,							/* number of pure phases */
+	16,							/* number of pure phases */
 	15,							/* number of solution phases */
 	{"SiO2"	,"CaO"	,"Al2O3", "MgO"	,"Na2O" , "O"   ,"Cr2O3", "Fe"																		},
-	{"neph"	,"ky"	,"st"	,"coe"	,"qtz"	,"capv"	, "O2" 	,  "fea",  "fee",  "feg", "apbo", "wo" , "lppv" , "pwo", "aMgO" ,"aFeO" ,"aAl2O3"					},
+	{"neph"	,"ky"	,"st"	,"coe"	,"qtz"	,"capv"	,  "fea",  "fee",  "feg", "apbo", "wo" , "lppv" , "pwo", "aMgO" ,"aFeO" ,"aAl2O3"					},
 	{"plg"	,"sp"	,"ol"	,"wa"	,"ri"	,"opx"	,"cpx"	,"hpcpx", "ak"	,"gtmj"	,"pv"	 ,"ppv"	 ,"cf"	 ,"mw"	  ,"nal"					},
 	
 	{1		,1		,1		,1		,1		,1		,1		,1		,1 		,1 		,1 		,1 		,1		,1		,1						}, // allow solvus?
@@ -427,7 +427,7 @@ global_variable global_variable_SB_init( 	global_variable  	 gv,
 		gv.n_em_db 			= 68;
 	}
 	else if (gv.EM_dataset == 2024){
-		gv.n_em_db 			= 75;
+		gv.n_em_db 			= 74;
 	}
 
 	return gv;
